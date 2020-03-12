@@ -315,7 +315,7 @@ public class JDTCompiler extends org.apache.jasper.compiler.Compiler {
                              CompilerOptions.VERSION_1_8);
             // Version format changed from Java 9 onwards.
             // Support old format that was used in EA implementation as well
-            } else if(opt.equals("9") || opt.equals("1.9")) {
+            } /*else if(opt.equals("9") || opt.equals("1.9")) {
                 settings.put(CompilerOptions.OPTION_Source,
                              CompilerOptions.VERSION_9);
             } else if(opt.equals("10")) {
@@ -327,7 +327,7 @@ public class JDTCompiler extends org.apache.jasper.compiler.Compiler {
             } else if(opt.equals("12")) {
                 settings.put(CompilerOptions.OPTION_Source,
                              CompilerOptions.VERSION_12);
-            } else if(opt.equals("13")) {
+            }*/ else if(opt.equals("13")) {
                 // Constant not available in latest ECJ version shipped with
                 // Tomcat. May be supported in a snapshot build.
                 // This is checked against the actual version below.
@@ -380,7 +380,7 @@ public class JDTCompiler extends org.apache.jasper.compiler.Compiler {
                         CompilerOptions.VERSION_1_8);
             // Version format changed from Java 9 onwards.
             // Support old format that was used in EA implementation as well
-            } else if(opt.equals("9") || opt.equals("1.9")) {
+            } /*else if(opt.equals("9") || opt.equals("1.9")) {
                 settings.put(CompilerOptions.OPTION_TargetPlatform,
                              CompilerOptions.VERSION_9);
                 settings.put(CompilerOptions.OPTION_Compliance,
@@ -400,7 +400,7 @@ public class JDTCompiler extends org.apache.jasper.compiler.Compiler {
                         CompilerOptions.VERSION_12);
                 settings.put(CompilerOptions.OPTION_Compliance,
                         CompilerOptions.VERSION_12);
-            } else if(opt.equals("13")) {
+            } */else if(opt.equals("13")) {
                 // Constant not available in latest ECJ version shipped with
                 // Tomcat. May be supported in a snapshot build.
                 // This is checked against the actual version below.
